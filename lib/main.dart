@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_boilerplate/dio_api/dio_api_screen.dart';
+import 'package:flutter_boilerplate/dio_pagination/dio_pagination_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: const DioApiScreen(),
+      home: const DioPaginationScreen(),
     );
   }
 }

@@ -1,9 +1,9 @@
 import 'package:flutter_boilerplate/dio_api/dio_api_model.dart';
 
-sealed class DioApiState {}
+abstract class DioApiState {}
 
 class SuccessState extends DioApiState {
-  final List<Products> products;
+  final List<ProductDio> products;
   SuccessState({required this.products});
 }
 

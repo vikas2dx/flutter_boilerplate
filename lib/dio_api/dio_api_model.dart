@@ -1,22 +1,22 @@
-class ProductModel {
-  List<Products> products;
+class DioApiModel {
+  List<ProductDio> products;
 
-  ProductModel({required this.products});
-  factory ProductModel.fromJson(Map<String, dynamic> json) {
-    return ProductModel(
+  DioApiModel({required this.products});
+  factory DioApiModel.fromJson(Map<String, dynamic> json) {
+    return DioApiModel(
       products: (json['products'] as List)
-          .map((json) => Products.fromJson(json))
+          .map((json) => ProductDio.fromJson(json))
           .toList(),
     );
   }
 }
 
-class Products {
+class ProductDio {
   final String title;
   final String description;
 
-  Products({required this.title, required this.description});
+  ProductDio({required this.title, required this.description});
 
-  factory Products.fromJson(Map<String, dynamic> json) =>
-      Products(title: json['title'], description: json['description']);
+  factory ProductDio.fromJson(Map<String, dynamic> json) =>
+      ProductDio(title: json['title'], description: json['description']);
 }

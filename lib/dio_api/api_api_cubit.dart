@@ -32,7 +32,7 @@ class DioApiCubit extends Cubit<DioApiState> {
         queryParameters: {'limit': 10},
       );
 
-      final ProductModel productModel = ProductModel.fromJson(response.data);
+      final DioApiModel productModel = DioApiModel.fromJson(response.data);
 
       if (productModel.products.isEmpty) {
         emit(ErrorState(message: "No Products Available"));
