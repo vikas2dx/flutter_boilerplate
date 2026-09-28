@@ -28,6 +28,7 @@ class _DioPaginationScreenState extends State<DioPaginationScreen> {
     return BlocProvider.value(
       value: _dioPaginationCubit,
       child: Scaffold(
+        appBar: AppBar(title: Text("Dio Pagination")),
         body: BlocBuilder<DioPaginationCubit, DioPaginationState>(
           builder: (context, state) {
             if (state is InitialState) {
