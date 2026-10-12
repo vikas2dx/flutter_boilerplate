@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_boilerplate/core/routes/routes_names.dart';
 import 'package:flutter_boilerplate/dio_api/api_api_cubit.dart';
 import 'package:flutter_boilerplate/dio_api/dio_api_state.dart';
+import 'package:go_router/go_router.dart';
 
 class DioApiScreen extends StatelessWidget {
   const DioApiScreen({super.key});
@@ -32,6 +34,17 @@ class DioApiScreen extends StatelessWidget {
                 itemBuilder: (context, index) {
                   final product = state.products[index];
                   return ListTile(
+                    onTap: () {
+                      context.pushNamed(
+                        RoutesName.dioApiDetails,
+                        extra: product,
+                      );
+                    },
+                    leading: SizedBox(
+                      height: 100,
+                      width: 100,
+                      child: Image.network(product.thumbnail),
+                    ),
                     title: Text(product.title),
                     subtitle: Text(product.description),
                   );

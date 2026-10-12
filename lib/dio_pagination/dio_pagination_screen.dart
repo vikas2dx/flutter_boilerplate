@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_boilerplate/core/routes/routes_names.dart';
 import 'package:flutter_boilerplate/dio_pagination/dio_pagination_cubit.dart';
 import 'package:flutter_boilerplate/dio_pagination/dio_pagination_state.dart';
+import 'package:go_router/go_router.dart';
 
 class DioPaginationScreen extends StatefulWidget {
   const DioPaginationScreen({super.key});
@@ -54,6 +56,17 @@ class _DioPaginationScreenState extends State<DioPaginationScreen> {
                   final product = state.products[index];
 
                   return ListTile(
+                    onTap: () {
+                      context.pushNamed(
+                        RoutesName.dioPaginationDetails,
+                        extra: product,
+                      );
+                    },
+                    leading: SizedBox(
+                      width: 100,
+                      height: 100,
+                      child: Image.network(product.thumbnail),
+                    ),
                     title: Text(product.title),
                     subtitle: Text(product.description),
                   );
