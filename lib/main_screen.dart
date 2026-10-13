@@ -33,6 +33,14 @@ class _MainScreenState extends State<MainScreen> {
               context.pushNamed(RoutesName.dioPagination);
             },
           ),
+          ListTile(
+            title: const Text('Load Json Assets'),
+            subtitle: const Text('Load json assets and Display'),
+            trailing: const Icon(Icons.arrow_forward_ios),
+            onTap: () {
+              context.pushNamed(RoutesName.loadJsonAssets);
+            },
+          ),
         ],
       ),
     );
