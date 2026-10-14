@@ -41,6 +41,14 @@ class _MainScreenState extends State<MainScreen> {
               context.pushNamed(RoutesName.loadJsonAssets);
             },
           ),
+          ListTile(
+            title: const Text('FutureBuilder Api Call'),
+            subtitle: const Text('Dio API call and load using FutureBuilder'),
+            trailing: const Icon(Icons.arrow_forward_ios),
+            onTap: () {
+              context.pushNamed(RoutesName.futureBuilderDio);
+            },
+          ),
         ],
       ),
     );

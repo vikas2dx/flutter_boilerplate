@@ -5,6 +5,7 @@ import 'package:flutter_boilerplate/dio_api/dio_api_screen.dart';
 import 'package:flutter_boilerplate/dio_pagination/dio_pagination_details_screen.dart';
 import 'package:flutter_boilerplate/dio_pagination/dio_pagination_model.dart';
 import 'package:flutter_boilerplate/dio_pagination/dio_pagination_screen.dart';
+import 'package:flutter_boilerplate/future_builder_dio_api/future_builder_dio_screen.dart';
 import 'package:flutter_boilerplate/load_json_assets/load_json_assets_screen.dart';
 import 'package:flutter_boilerplate/main_screen.dart';
 import 'package:go_router/go_router.dart';
@@ -54,6 +55,11 @@ final GoRouter appRouter = GoRouter(
       path: '/loadJsonAssets',
       name: RoutesName.loadJsonAssets,
       builder: (context, state) => LoadJsonAssetsScreen(),
+    ),
+    GoRoute(
+      path: '/futureBuilderDio',
+      name: RoutesName.futureBuilderDio,
+      builder: (context, state) => FutureBuilderDioScreen(),
     ),
   ],
 );

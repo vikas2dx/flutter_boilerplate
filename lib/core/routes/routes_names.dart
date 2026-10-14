@@ -5,4 +5,5 @@ class RoutesName {
   static const String dioPagination = "dioPagination";
   static const String dioPaginationDetails = "dioPaginationDetails";
   static const String loadJsonAssets = "loadJsonAssets";
+  static const String futureBuilderDio = "futureBuilderDio";
 }
