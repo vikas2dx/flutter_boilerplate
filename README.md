@@ -8,6 +8,7 @@ A starter Flutter application with a Dio-based API integration setup.
 - [Dio Pagination](lib/dio_pagination) — paginated product listing demo using Dio and Bloc.
 - [Load json Assets](lib/load_json_assets) — Load json assets and display using setState
 - [FutureBuilder API call](lib/future_builder_dio_api) — Dio API call and handle response using FutureBuilder
+- [Provider API call](lib/provider_api_call) — Dio API call and handle response using Provider state management
 - [Main App](lib/main.dart) — application entry point.
 
 ## Getting Started
