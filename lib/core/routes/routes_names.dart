@@ -6,4 +6,5 @@ class RoutesName {
   static const String dioPaginationDetails = "dioPaginationDetails";
   static const String loadJsonAssets = "loadJsonAssets";
   static const String futureBuilderDio = "futureBuilderDio";
+  static const String providerApiCall = "providerApiCall";
 }

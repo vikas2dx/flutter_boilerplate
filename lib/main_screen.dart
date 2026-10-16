@@ -49,6 +49,15 @@ class _MainScreenState extends State<MainScreen> {
               context.pushNamed(RoutesName.futureBuilderDio);
             },
           ),
+
+          ListTile(
+            title: const Text('Provdier Api Call'),
+            subtitle: const Text('Provider API call using Dio'),
+            trailing: const Icon(Icons.arrow_forward_ios),
+            onTap: () {
+              context.pushNamed(RoutesName.providerApiCall);
+            },
+          ),
         ],
       ),
     );

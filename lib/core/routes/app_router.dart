@@ -8,6 +8,7 @@ import 'package:flutter_boilerplate/dio_pagination/dio_pagination_screen.dart';
 import 'package:flutter_boilerplate/future_builder_dio_api/future_builder_dio_screen.dart';
 import 'package:flutter_boilerplate/load_json_assets/load_json_assets_screen.dart';
 import 'package:flutter_boilerplate/main_screen.dart';
+import 'package:flutter_boilerplate/provider_api_call/provider_api_call_screen.dart';
 import 'package:go_router/go_router.dart';
 
 final GoRouter appRouter = GoRouter(
@@ -60,6 +61,12 @@ final GoRouter appRouter = GoRouter(
       path: '/futureBuilderDio',
       name: RoutesName.futureBuilderDio,
       builder: (context, state) => FutureBuilderDioScreen(),
+    ),
+
+    GoRoute(
+      path: '/providerApiCall',
+      name: RoutesName.providerApiCall,
+      builder: (context, state) => ProviderApiCallScreen(),
     ),
   ],
 );
